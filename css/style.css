@@ -1,0 +1,163 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff4500;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #333, #222);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Games Section */
+.games-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.game-tile {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.game-tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 15px;
+}
+
+.game-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.game-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Play Button */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgba(255, 69, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.game-tile:hover .play-btn {
+    display: block;
+}
+
+.play-btn:hover {
+    background-color: rgba(255, 69, 0, 1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Search Bar */
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #ff4500;
+}

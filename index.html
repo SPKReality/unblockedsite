@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Game Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./gamespage/games.html">Games</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover & Play Your Favorite Games</h2>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <input type="text" id="search-bar" placeholder="Search for a game..." onkeyup="searchGames()">
+    </section>
+
+    <section class="games-section">
+        <h3>Featured Games</h3>
+        <div class="games-grid" id="game-list">
+            <div class="game-tile">
+                <img src="game1.jpg" alt="Game 1">
+                <div class="game-info">
+                    <h3 class="game-title">Game 1</h3>
+                    <p>Explore the exciting world of Game 1.</p>
+                </div>
+                <a href="./games/drifthunters.html" class="play-btn">Play</a>
+            </div>
+            <div class="game-tile">
+                <img src="game2.jpg" alt="Game 2">
+                <div class="game-info">
+                    <h3 class="game-title">Game 2</h3>
+                    <p>Challenge yourself in this fast-paced adventure.</p>
+                </div>
+                <a href="game2-play.html" class="play-btn">Play</a>
+            </div>
+            <div class="game-tile">
+                <img src="game3.jpg" alt="Game 3">
+                <div class="game-info">
+                    <h3 class="game-title">Game 3</h3>
+                    <p>Get ready for the ultimate battle in Game 3.</p>
+                </div>
+                <a href="game3-play.html" class="play-btn">Play</a>
+            </div>
+        </div>
+
+        <div class="view-all">
+            <a href="games.html" class="view-all-btn">View All Games</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Game Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/search.js"></script>
+</body>
+</html>
